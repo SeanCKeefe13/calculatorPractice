@@ -1,0 +1,90 @@
+button {
+    background-color: azure;
+}
+
+#main-container {
+    display: flex;
+    margin: auto;
+    width: 35%;
+    height: 575px;
+    flex-direction: column;
+    padding: 5px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
+
+.display {
+    height: 50px;
+    flex-grow: 1;
+    flex-direction: column;
+    font-size: 2.75em;
+    text-align: end;
+    align-items: flex-end;
+    justify-content: flex-end;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 3px 5px 3px 5px;
+}
+
+.button-row {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    text-align: center;
+    flex-basis: 25px;
+    line-height: 25px;
+}
+
+.calc-button {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 25%;
+    border: 1px solid black;
+    margin: 2px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#add {
+    background-color: rgba(13, 216, 61, .6);
+}
+
+#add:hover {
+    background-color: rgba(13, 216, 61, .8);
+}
+
+#subtract {
+    background-color: rgba(191, 38, 38, .6);
+}
+
+#subtract:hover {
+    background-color: rgba(191, 38, 38, .8);
+}
+
+#negative {
+    background-color: rgba(230, 230, 230, .8);
+}
+
+#decimal {
+    background-color: rgba(230, 230, 230, .8);
+}
+
+.symbol {
+    background-color: lightgray;
+}
+
+.calc-button:hover {
+    background-color: rgba(201, 216, 204, 0.7);
+    transform: scale(1.08);
+}
+
+.calc-button:target {
+    background-color: rgba(201, 216, 204, 1);
+    transform: scale(.95);
+}
+
+.divide span {
+    font-size: 20px;
+}
