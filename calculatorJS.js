@@ -18,11 +18,11 @@ function updateDisplay(e){
         currentValue = '';
         totalDisplay.innerText = '';
     }
-    // if(targetedValue === 'erase'){
-    //     display.innerText = '';
-    //     currentValue = currentValue.slice(0, currentValue.length - 1);
-    //     totalDisplay.innerText = '';
-    // }
+    if(e.currentTarget.id === 'erase'){
+        display.innerText = '';
+        currentValue = currentValue.slice(0, currentValue.length - 1);
+        totalDisplay.innerText = '';
+    }
     if(targetedValue === ')'){
         display.innerText += ')';
         currentValue += ')';
@@ -62,7 +62,7 @@ function updateDisplay(e){
     // if(targetedValue === '1/x'){
     //     currentValue += ` ${targetedValue} `;
     // }
-    if (targetedValue === "negative") {
+    if (e.currentTarget.id === "negative") {
         const value = math.evaluate(currentValue) * -1;
         currentValue = String(value);
         display.innerText = currentValue;
